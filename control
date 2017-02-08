@@ -1,7 +1,7 @@
 Package: applebetas.ios.tweak.cleannotifications10
 Name: CleanNotifications10
 Depends: mobilesubstrate, firmware (>= 10.0)
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Description: Give notifications and widgets a cleaner look.
 Maintainer: AppleBetas
