@@ -1,9 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface NCMaterialView : UIView
--(void)changeAlphas;
-@end
-
 // MARK: - Hook notifications below
 
 %hook NCMaterialView
@@ -13,8 +9,7 @@
 }
 
 -(void)setBackgroundColor:(UIColor *)arg1 {
-    arg1 = [UIColor clearColor];
-    %orig;
+    %orig([UIColor clearColor]);
 }
 
 -(UIView *)colorInfusionView {
